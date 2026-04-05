@@ -9,11 +9,14 @@ url: "https://wangtao-phy.github.io"
 
 description: >-
   <style>
-    /* 1. 隐藏主题自带的标题（带超链接的名字） */
-    .sidebar-about h1 {
+    /* 精准定位并隐藏主题自带的标题 */
+    .sidebar-title,
+    .sidebar-about h1,
+    .masthead-title {
       display: none !important;
     }
-    /* 2. 自定义内容的居中与样式 */
+
+    /* 以下是你的自定义内容样式，确保居中 */
     .my-sidebar {
       text-align: center;
     }
@@ -42,12 +45,9 @@ description: >-
     }
   </style>
   <div class="my-sidebar">
-    <!-- 头像 -->
     <img src="/assets/bp.jpeg" alt="Tao Wang">
-    <!-- 名字 + 超链接（你原来的 title） -->
     <div class="my-name">
       <a href="https://wangtao-phy.github.io">Tao Wang (王涛)</a>
     </div>
-    <!-- 职位描述 -->
     <div class="my-title">Theoretical Physics Researcher</div>
   </div>
