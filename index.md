@@ -23,3 +23,13 @@ title: Curriculum Vitae
 * Constructed a foundational framework for stochastic mechanics in curved spacetime.  This framework enables consistent formulations of the first and second laws of thermodynamics under causal constraints and establishes a fluctuation theorem that preserves general covariance; 
 * Analyzed relativistic diffusion processes using adiabatic elimination methods, clarifying their conceptual and dynamical distinctions from diffusion mechanisms in the Newtonian regime.
 
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
