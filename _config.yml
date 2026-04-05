@@ -9,22 +9,23 @@ url: "https://wangtao-phy.github.io"
 
 # 核心修改：在个人简介中注入排序代码，实现头像在上、名字在下
 description: >-
-  <style>
-    .sidebar-about h1 {
-      margin-top: 15px !important;
-      margin-bottom: 0 !important;
-    }
-  </style>
-  <div style="text-align: center;">
-    <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: inline-block;" />
+  <div id="my-avatar" style="text-align: center;">
+    <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
     <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 10px;">Theoretical Physics Researcher</div>
   </div>
   <script>
-    setTimeout(function() {
-      var container = document.querySelector('.sidebar-about');
-      var nameNode = document.querySelector('.sidebar-about h1');
-      if (container && nameNode) {
-        container.appendChild(nameNode);
+    (function() {
+      function swap() {
+        var avatar = document.getElementById('my-avatar');
+        var nameElem = document.querySelector('.sidebar-about h1');
+        if (avatar && nameElem && avatar.parentNode === nameElem.parentNode) {
+          nameElem.parentNode.insertBefore(avatar, nameElem);
+        }
       }
-    }, 100);
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', swap);
+      } else {
+        swap();
+      }
+    })();
   </script>
