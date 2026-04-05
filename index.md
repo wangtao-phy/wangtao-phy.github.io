@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Tao Wang (王涛)
+layout: page
+title: Curriculum Vitae
 ---
 
-# Tao Wang (王涛) 
+# Tao Wang (王涛)
 
 **Email:** wangtao97@ustc.edu.cn
 
