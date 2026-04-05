@@ -3,29 +3,37 @@ plugins:
   - jekyll-remote-theme
 remote_theme: vszhub/not-pure-poole
 
-# 网站基本信息设置
-title: Tao Wang (王涛)
-url: "https://wangtao-phy.github.io" 
-
-# 核心修改：在个人简介中注入排序代码，实现头像在上、名字在下
 description: >-
-  <div id="my-avatar" style="text-align: center;">
+  <style>
+    /* 让侧边栏变成弹性列布局，以便控制顺序 */
+    .sidebar-about {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    /* 名字（h1）放在第二位 */
+    .sidebar-about h1 {
+      order: 2 !important;
+      margin-top: 15px !important;   /* 调整名字与头像的间距 */
+    }
+    /* 简介区域（放头像和文字）放在第一位 */
+    .sidebar-about .lead {
+      order: 1 !important;
+    }
+    /* 保证头像和文字居中 */
+    .sidebar-about .lead > div {
+      text-align: center !important;
+    }
+    .sidebar-about .lead img {
+      display: block !important;
+      margin: 0 auto !important;
+    }
+  </style>
+  <!-- 以下是你的头像和职业描述 -->
+  <div>
     <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
     <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 10px;">Theoretical Physics Researcher</div>
   </div>
-  <script>
-    (function() {
-      function swap() {
-        var avatar = document.getElementById('my-avatar');
-        var nameElem = document.querySelector('.sidebar-about h1');
-        if (avatar && nameElem && avatar.parentNode === nameElem.parentNode) {
-          nameElem.parentNode.insertBefore(avatar, nameElem);
-        }
-      }
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', swap);
-      } else {
-        swap();
-      }
-    })();
-  </script>
+
+# 网站基本信息设置
+title: Tao Wang (王涛)
+url: "https://wangtao-phy.github.io" 
