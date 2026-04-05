@@ -1,1 +1,9 @@
-theme: jekyll-theme-minimal
+# 引入 not-pure-poole 主题
+plugins:
+  - jekyll-remote-theme
+remote_theme: vszhub/not-pure-poole
+
+# 网站基本信息设置（显示在网页左侧或顶部）
+title: Tao Wang (王涛)
+description: Theoretical Physics Researcher
+url: "https://wangtao-phy.github.io" # 替换成你的实际网址
