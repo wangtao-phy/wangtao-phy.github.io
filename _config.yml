@@ -3,37 +3,51 @@ plugins:
   - jekyll-remote-theme
 remote_theme: vszhub/not-pure-poole
 
-description: >-
-  <style>
-    /* 让侧边栏变成弹性列布局，以便控制顺序 */
-    .sidebar-about {
-      display: flex !important;
-      flex-direction: column !important;
-    }
-    /* 名字（h1）放在第二位 */
-    .sidebar-about h1 {
-      order: 2 !important;
-      margin-top: 15px !important;   /* 调整名字与头像的间距 */
-    }
-    /* 简介区域（放头像和文字）放在第一位 */
-    .sidebar-about .lead {
-      order: 1 !important;
-    }
-    /* 保证头像和文字居中 */
-    .sidebar-about .lead > div {
-      text-align: center !important;
-    }
-    .sidebar-about .lead img {
-      display: block !important;
-      margin: 0 auto !important;
-    }
-  </style>
-  <!-- 以下是你的头像和职业描述 -->
-  <div>
-    <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
-    <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 10px;">Theoretical Physics Researcher</div>
-  </div>
-
 # 网站基本信息设置
 title: Tao Wang (王涛)
 url: "https://wangtao-phy.github.io" 
+
+description: >-
+  <style>
+    /* 1. 隐藏主题自带的标题（带超链接的名字） */
+    .sidebar-about h1 {
+      display: none !important;
+    }
+    /* 2. 自定义内容的居中与样式 */
+    .my-sidebar {
+      text-align: center;
+    }
+    .my-sidebar img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.8);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: inline-block;
+    }
+    .my-name {
+      margin-top: 15px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .my-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .my-title {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-top: 10px;
+    }
+  </style>
+  <div class="my-sidebar">
+    <!-- 头像 -->
+    <img src="/assets/bp.jpeg" alt="Tao Wang">
+    <!-- 名字 + 超链接（你原来的 title） -->
+    <div class="my-name">
+      <a href="https://wangtao-phy.github.io">Tao Wang (王涛)</a>
+    </div>
+    <!-- 职位描述 -->
+    <div class="my-title">Theoretical Physics Researcher</div>
+  </div>
