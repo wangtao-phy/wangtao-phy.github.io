@@ -10,25 +10,21 @@ url: "https://wangtao-phy.github.io"
 # 核心修改：在个人简介中注入排序代码，实现头像在上、名字在下
 description: >-
   <style>
-    /* 开启弹性盒子，准备调换位置 */
-    .sidebar-about {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
-    }
-    /* 把包含头像的简介区域强制排到第 1 位（最上面） */
-    .sidebar-about .lead {
-      order: 1 !important; 
-      margin-bottom: 0 !important;
-      width: 100%;
-    }
-    /* 4. 把系统自带的名字强制排到第 2 位（头像下面） */
     .sidebar-about h1 {
-      order: 2 !important; 
       margin-top: 15px !important;
+      margin-bottom: 0 !important;
     }
   </style>
   <div style="text-align: center;">
-    <img src="/assets/bp.jpg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: inline-block;" />
-    <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 15px;">Theoretical Physics Researcher</div>
+    <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: inline-block;" />
+    <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 10px;">Theoretical Physics Researcher</div>
   </div>
+  <script>
+    setTimeout(function() {
+      var container = document.querySelector('.sidebar-about');
+      var nameNode = document.querySelector('.sidebar-about h1');
+      if (container && nameNode) {
+        container.appendChild(nameNode);
+      }
+    }, 100);
+  </script>
