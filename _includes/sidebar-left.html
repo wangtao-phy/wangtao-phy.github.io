@@ -1,23 +1,35 @@
-<!-- 完全复制 not-pure-poole 主题原有的侧边栏，并加入计数器 -->
-<div class="sidebar sidebar-about">
-  <div class="sidebar-about">
-    <!-- 你的头像和简介（按你原来的写法） -->
-    <div style="text-align: center;">
-      <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: inline-block;" />
-      <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 10px;">Theoretical Physics Researcher</div>
+<aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <!-- 你的头像和职称（放在名字上方） -->
+      <div style="text-align: center;">
+        <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: inline-block;" />
+      </div>
+      
+      <!-- 网站标题（带超链接的名字） -->
+      <h1>
+        <a href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+      </h1>
+      
+      <!-- 原主题的描述（如果有简短文字可保留，没有就留空或注释） -->
+      {% if site.description %}
+        <p class="lead">{{ site.description }}</p>
+      {% endif %}
     </div>
 
-    <!-- 网站标题（带超链接的名字） -->
-    <h1>
-      <a href="{{ '/' | absolute_url }}">Tao Wang (王涛)</a>
-    </h1>
+    <!-- 导航菜单（从 navigation.yml 读取） -->
+    <nav class="sidebar-nav">
+      {% for item in site.data.navigation %}
+        <a class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
 
-    <!-- 可选：分割线 -->
-    <hr style="margin: 1rem 0; opacity: 0.3;">
-
-    <!-- Vercount 计数器 -->
-    <div style="text-align: center; font-size: 0.9rem; margin-top: 0.5rem;">
+    <!-- 访客计数器（放在导航菜单下方） -->
+    <div style="text-align: center; font-size: 0.85rem; margin-top: 1.5rem; opacity: 0.7;">
+      <span id="vercount_value_site_pv"></span> 次访问<br>
       <span id="vercount_value_site_uv"></span> 位访客
     </div>
+
+    <!-- 可选：原主题可能还有版权信息等，可按需添加 -->
   </div>
-</div>
+</aside>
