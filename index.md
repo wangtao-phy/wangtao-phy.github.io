@@ -37,5 +37,3 @@ title: Curriculum Vitae
 * Constructed a foundational framework for stochastic mechanics in curved spacetime.  This framework enables consistent formulations of the first and second laws of thermodynamics under causal constraints and establishes a fluctuation theorem that preserves general covariance; 
 * Analyzed relativistic diffusion processes using adiabatic elimination methods, clarifying their conceptual and dynamical distinctions from diffusion mechanisms in the Newtonian regime.
 
-* 2025.10.17-10.20 西南西北理论物理联合研讨会分会场报告:“Adiabatic Elimination in Relativistic Stochastic Mechanics" 
-* 2026.01.04-01.17 The Second Quantum Connections Winter School. 
