@@ -1,4 +1,4 @@
-# 引入 not-pure-poole 主题（请确保这两行还在你的配置文件最上方）
+# 引入 not-pure-poole 主题
 plugins:
   - jekyll-remote-theme
 remote_theme: vszhub/not-pure-poole
@@ -11,14 +11,16 @@ url: "https://wangtao-phy.github.io"
 cover_image: /assets/bg.jpeg
 cover_color: "rgb(255, 255, 255)"
 
-# 带头像和名字的个人简介（名字在头像下方，并隐藏原默认标题）
+# 带头像和名字的个人简介（已隐藏顶部自带的名字和 Home 链接）
 description: >-
   <style>
-    /* 隐藏主题默认在最顶部生成的标题，防止名字出现两次 */
-    .sidebar-title, .profile-title, .site-title { display: none !important; }
+    /* 彻底隐藏侧边栏最顶部自带的名字 */
+    .sidebar-about h1 { display: none !important; }
+    /* 隐藏默认指向 Home 的超链接 */
+    .sidebar-nav-item[href="/"], .sidebar-nav-item[href$="wangtao-phy.github.io/"] { display: none !important; }
   </style>
   <div style="text-align: center;">
-    <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 12px; display: inline-block;" />
+    <img src="/assets/avatar.jpg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 12px; display: inline-block;" />
     <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 5px; line-height: 1.2; letter-spacing: 0.5px;">Tao Wang (王涛)</div>
     <div style="font-size: 0.95rem; opacity: 0.9;">Theoretical Physics Researcher</div>
   </div>
