@@ -7,6 +7,7 @@ permalink: /others/
 ## Teaching Experience 
 * **Teaching Assistant, Thermodynamics and Statistical Mechanics** (Spring 2020, Spring 2021, Spring 2023, Spring 2024) 
 * **Teaching Assistant, General Relativity** (Spring 2022)
+  
   Graded assignments and conducted problem-solving sessions. 
 * Provided non-teaching assistance in preparing and organizing materials for a quantum mechanics textbook. 
 
