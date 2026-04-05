@@ -4,14 +4,14 @@ plugins:
 remote_theme: vszhub/not-pure-poole
 
 # 网站基本信息设置
-# title: Tao Wang (王涛)
-# url: "https://wangtao-phy.github.io" 
+title: Tao Wang (王涛)
+url: "https://wangtao-phy.github.io" 
 
 # 侧边栏/导航栏背景图
-cover_image: /assets/bp.jpeg
+# cover_image: /assets/bp.jpeg
 cover_color: "rgb(255, 255, 255)"
 
-# 带头像和名字的个人简介（已隐藏顶部自带的名字和 Home 链接）
+# 带头像和名字的个人简介
 description: >-
   <style>
     /* 彻底隐藏侧边栏最顶部自带的名字 */
