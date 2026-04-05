@@ -7,3 +7,13 @@ remote_theme: vszhub/not-pure-poole
 title: Tao Wang (王涛)
 description: Theoretical Physics Researcher
 url: "https://wangtao-phy.github.io" # 替换成你的实际网址
+
+# 侧边栏/导航栏背景图
+cover_image: /assets/bg.jpeg
+cover_color: "rgb(255, 255, 255)" # 如果背景图太亮，这个设置能确保文字是白色的
+
+# 带圆形头像的个人简介
+description: >-
+  <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 15px;" />
+  <br>
+  Theoretical Physics Researcher
