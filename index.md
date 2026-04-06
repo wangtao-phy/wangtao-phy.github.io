@@ -10,11 +10,14 @@ title: Curriculum Vitae
 **Profiles:** [InspireHEP](https://inspirehep.net/authors/3069636), ORCID: [0000-0001-5830-9826](https://orcid.org/0000-0001-5830-9826) 
 
 ## Research Interest 
-* **Geometric Formulation of Stochastic Thermodynamics** 
+* **Geometric Formulation of Stochastic Thermodynamics**
+  
   Investigating stochastic thermodynamics from a differential-geometric perspective, with emphasis on entropy production, fluctuation relations, and the interplay between stochastic thermodynamic structures and contact geometry. 
 * **Causality, Irreversibility, and the Foundations of Nonequilibrium Physics** 
+
   Exploring the emergence of macroscopic irreversibility from microscopic dynamics, the role of causal structure in thermodynamic processes, and fundamental constraints imposed by relativistic causality on nonequilibrium evolution. 
 * **Black Hole Thermodynamics and Quantum Description of Matter in Curved Spacetime** 
+
   Studying black hole thermodynamics by developing an appropriate statistical description of matter fields in curved spacetime, and analysing the behaviour of particles in curved spacetime. 
 
 
