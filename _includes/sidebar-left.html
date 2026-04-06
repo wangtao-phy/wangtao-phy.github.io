@@ -1,91 +1,50 @@
-<aside class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <!-- 你的头像和职称 -->
-      <div style="text-align: center;">
-        <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: inline-block;" />
-      </div>
-      
-      <h1>
-        <a href="{{ '/' | absolute_url }}">{{ site.title }}</a>
-      </h1>
-      
-      {% if site.description %}
-        <p class="lead">{{ site.description }}</p>
-      {% endif %}
-    </div>
+<!-- 新加的父级容器，用于独立控制布局 -->
+<div style="display: flex; align-items: center; min-height: 100vh;">
+    <div style="width: 100%; text-align: center;">
+        
+        <!-- 原有的侧边栏内容开始 -->
+        <div class="sidebar-about">
+            <!-- 你的头像和职称 -->
+            <div style="display: flex; justify-content: center;">
+                <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+            </div>
+            <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 10px;">Theoretical Physics Researcher</div>
+            
+            <h1>
+                <a href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+            </h1>
+        </div>
 
-    <!-- 导航菜单 -->
-    <nav class="sidebar-nav">
-      {% for item in site.data.navigation %}
-        <a class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-      {% endfor %}
-    </nav>
+        <!-- 导航菜单 -->
+        <nav class="sidebar-nav">
+            {% for item in site.data.navigation %}
+                <a class="sidebar-nav-item" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
 
-    <!-- 访客计数器 -->
-    <div class="vercount-container">
-      <span id="vercount_value_site_uv"></span> 位访客
+        <!-- 访客计数器 -->
+        <div class="vercount-container">
+            <span id="vercount_value_site_uv"></span> 位访客
+        </div>
+        <!-- 原有的侧边栏内容结束 -->
+        
     </div>
-  </div>
-</aside>
+</div>
 
 <style>
-  /* 1. 让侧边栏内容整体垂直居中（增加顶部内边距，调整底部留白） */
-  .sidebar-sticky {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  /* 垂直居中 */
-    min-height: 100vh;       /* 撑满侧边栏高度 */
-    padding-top: 2rem;       /* 避免太靠上，可自行调整 */
-    padding-bottom: 2rem;
-  }
-
-  /* 2. 导航菜单：垂直排列、居中、去除默认蓝色 */
-  .sidebar-nav {
-    display: flex;
-    flex-direction: column;   /* 每一项单独一行 */
-    align-items: center;      /* 水平居中 */
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .sidebar-nav-item {
-    display: block;           /* 确保块级元素，独占一行 */
-    padding: 0.3rem 0;
-    color: #3a3a3a;          /* 深灰色，代替原蓝色 */
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .sidebar-nav-item:hover {
-    color: #2c7cb0;          /* 悬停时略微带一点蓝色，保留交互感 */
-    text-decoration: underline;
-  }
-
-  /* 当前激活的菜单项样式 */
-  .sidebar-nav-item.active {
-    font-weight: bold;
-    color: #2c7cb0;
-  }
-
-  /* 3. 计数器样式：居中、字体稍小、半透明 */
-  .vercount-container {
-    text-align: center;
-    font-size: 0.85rem;
-    opacity: 0.7;
-    margin-top: 1rem;
-  }
-
-  /* 可选：调整头像和标题之间的间距 */
-  .sidebar-about {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* 如果标题（h1）的默认蓝色也想改 */
-  .sidebar-about h1 a {
-    color: #3a3a3a;
-  }
-  .sidebar-about h1 a:hover {
-    color: #2c7cb0;
-  }
+    /* 这里可以放一些样式微调，但主要的居中已经由内联样式实现了 */
+    .sidebar-nav-item {
+        display: block;
+        padding: 0.3rem 0;
+        color: #e3e4e5;
+        text-decoration: none;
+    }
+    .sidebar-nav-item:hover {
+        color: #2c7cb0;
+    }
+    .vercount-container {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        opacity: 0.7;
+    }
 </style>
