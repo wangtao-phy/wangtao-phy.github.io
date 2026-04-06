@@ -8,3 +8,17 @@ title: Tao Wang (王涛)
 url: "https://wangtao-phy.github.io" 
 
 description: Theoretical Physics Researcher
+
+# Jottings 集合设置
+collections:
+  jottings:
+    output: true
+    permalink: /jottings/:title/
+
+# 为 Jottings 集合中的文件设置默认布局
+defaults:
+  - scope:
+      type: "jottings"
+    values:
+      layout: "jottings"   # 使用 _layouts/jottings.html
+      author: "Tao Wang"
