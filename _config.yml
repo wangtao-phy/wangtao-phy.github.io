@@ -20,5 +20,5 @@ defaults:
   - scope:
       type: "jottings"
     values:
-      layout: "jottings"   # 使用 _layouts/jottings.html
+      layout: "default"   # 使用 _layouts/jottings.html
       author: "Tao Wang"
