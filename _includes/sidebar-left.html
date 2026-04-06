@@ -1,35 +1,91 @@
 <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <!-- 你的头像和职称（放在名字上方） -->
+      <!-- 你的头像和职称 -->
       <div style="text-align: center;">
         <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: inline-block;" />
       </div>
       
-      <!-- 网站标题（带超链接的名字） -->
       <h1>
         <a href="{{ '/' | absolute_url }}">{{ site.title }}</a>
       </h1>
       
-      <!-- 原主题的描述（如果有简短文字可保留，没有就留空或注释） -->
       {% if site.description %}
         <p class="lead">{{ site.description }}</p>
       {% endif %}
     </div>
 
-    <!-- 导航菜单（从 navigation.yml 读取） -->
+    <!-- 导航菜单 -->
     <nav class="sidebar-nav">
       {% for item in site.data.navigation %}
         <a class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
       {% endfor %}
     </nav>
 
-    <!-- 访客计数器（放在导航菜单下方） -->
-    <div style="text-align: center; font-size: 0.85rem; margin-top: 1.5rem; opacity: 0.7;">
-      <span id="vercount_value_site_pv"></span> 次访问<br>
+    <!-- 访客计数器 -->
+    <div class="vercount-container">
       <span id="vercount_value_site_uv"></span> 位访客
     </div>
-
-    <!-- 可选：原主题可能还有版权信息等，可按需添加 -->
   </div>
 </aside>
+
+<style>
+  /* 1. 让侧边栏内容整体垂直居中（增加顶部内边距，调整底部留白） */
+  .sidebar-sticky {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* 垂直居中 */
+    min-height: 100vh;       /* 撑满侧边栏高度 */
+    padding-top: 2rem;       /* 避免太靠上，可自行调整 */
+    padding-bottom: 2rem;
+  }
+
+  /* 2. 导航菜单：垂直排列、居中、去除默认蓝色 */
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;   /* 每一项单独一行 */
+    align-items: center;      /* 水平居中 */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-nav-item {
+    display: block;           /* 确保块级元素，独占一行 */
+    padding: 0.3rem 0;
+    color: #3a3a3a;          /* 深灰色，代替原蓝色 */
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .sidebar-nav-item:hover {
+    color: #2c7cb0;          /* 悬停时略微带一点蓝色，保留交互感 */
+    text-decoration: underline;
+  }
+
+  /* 当前激活的菜单项样式 */
+  .sidebar-nav-item.active {
+    font-weight: bold;
+    color: #2c7cb0;
+  }
+
+  /* 3. 计数器样式：居中、字体稍小、半透明 */
+  .vercount-container {
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 1rem;
+  }
+
+  /* 可选：调整头像和标题之间的间距 */
+  .sidebar-about {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* 如果标题（h1）的默认蓝色也想改 */
+  .sidebar-about h1 a {
+    color: #3a3a3a;
+  }
+  .sidebar-about h1 a:hover {
+    color: #2c7cb0;
+  }
+</style>
