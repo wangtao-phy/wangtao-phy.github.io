@@ -1,0 +1,31 @@
+---
+# 不需要 Front Matter
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <!-- 复制你主题原有的 <head> 内容（比如引入 CSS、JS 等） -->
+    <!-- 如果你不确定，可以直接复制 _layouts/default.html 中的 <head> 部分 -->
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <!-- Vercount 脚本等也可以放在这里 -->
+    <script defer src="https://cn.vercount.one/js"></script>
+</head>
+<body>
+    <!-- 侧边栏（与主题保持一致） -->
+    {% include sidebar-left.html %}
+
+    <main class="content container">
+        <article class="post">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="post-date">
+                发布于：{{ page.date | date: "%Y年%m月%d日" }}
+            </div>
+            <div class="post-content">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+</body>
+</html>
