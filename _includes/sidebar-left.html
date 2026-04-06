@@ -8,11 +8,14 @@
             <div style="display: flex; justify-content: center;">
                 <img src="/assets/bp.jpeg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
             </div>
-            <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 10px;">Theoretical Physics Researcher</div>
+            
             
             <h1>
                 <a href="{{ '/' | absolute_url }}">{{ site.title }}</a>
             </h1>
+
+            <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 10px;">Theoretical Physics Researcher</div>
+            
         </div>
 
         <!-- 导航菜单 -->
@@ -32,19 +35,64 @@
 </div>
 
 <style>
-    /* 这里可以放一些样式微调，但主要的居中已经由内联样式实现了 */
-    .sidebar-nav-item {
-        display: block;
-        padding: 0.3rem 0;
-        color: #e3e4e5;
-        text-decoration: none;
-    }
-    .sidebar-nav-item:hover {
-        color: #2c7cb0;
-    }
-    .vercount-container {
-        margin-top: 1rem;
-        font-size: 0.85rem;
-        opacity: 0.7;
-    }
+  /* 侧边栏容器：垂直居中 + 水平居中 */
+  .sidebar-sticky {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;  /* 垂直居中 */
+    align-items: center !important;     /* 水平居中 ← 这一行是新增的关键 */
+    min-height: 100vh !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* 确保所有子容器宽度自适应，不强制撑满 */
+  .sidebar-sticky > * {
+    width: auto !important;
+    max-width: 90% !important;
+  }
+
+  /* 导航菜单：垂直排列、内容居中 */
+  .sidebar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    width: 100% !important;
+  }
+
+  /* 菜单项：文字居中 */
+  .sidebar-nav-item {
+    display: block !important;
+    text-align: center !important;
+    padding: 0.3rem 0;
+    color: #e3e4e5 !important;
+    text-decoration: none !important;
+  }
+  .sidebar-nav-item:hover {
+    color: #2c7cb0 !important;
+  }
+
+  /* 计数器居中 */
+  .vercount-container {
+    text-align: center !important;
+    font-size: 0.85rem !important;
+    opacity: 0.7 !important;
+    margin-top: 1rem !important;
+  }
+
+  /* 头像容器居中 */
+  .sidebar-about {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* 名字链接颜色 */
+  .sidebar-about h1 a {
+    color: #3a3a3a !important;
+  }
+  .sidebar-about h1 a:hover {
+    color: #2c7cb0 !important;
+  }
 </style>
