@@ -1,0 +1,10 @@
+/* _sass/_custom.scss */
+.post-content img,
+.page-content img,
+.notes-content img {  /* 根据你的页面布局容器调整类名 */
+    width: 100%;
+    height: auto;      /* 保证高度自适应，防止变形 */
+    max-width: 100%;
+    object-fit: contain; /* 优先保证图片完整，可能会有黑边 */
+    /* 可选: object-fit: cover; /* 优先填满容器，可能会裁剪图片边缘 */
+}
