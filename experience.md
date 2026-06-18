@@ -12,7 +12,7 @@ permalink: /experience/
 * **B.Sc. in Physics, Northwest University** (2015.09-2019.07) 
 
 ## Research Experience 
-* **Postdoctoral Researcher, University of Science and Technology of China** (2024.07-Present) 
+* **Postdoctoral Researcher, University of Science and Technology of China** (2024.07-2026.06) 
   * Collaborating Advisor: Prof. Yu Shi(施郁) 
   * Investigated relativistic stochastic mechanics and derived effective coarse-grained models. 
   * Working on developing a framework describing the transition from relativistic stochastic mechanics to quantum behavior. 
