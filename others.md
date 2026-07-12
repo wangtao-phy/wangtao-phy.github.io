@@ -13,7 +13,9 @@ permalink: /others/
 
 ## Skills 
 * **Programming:** Python, Mathematica, Maple, LaTeX, C++ 
-* **Languages:** Chinese, English 
+* **Languages:** Chinese, English
+
+Built a macOS PDF reader with AI. [SimPleview](https://github.com/wangtao-phy/SimPleview)
 
 ## Others 
 * 2021.10.10-10.24 华侨大学“复杂系统与统计物理学的挑战和新机遇”秋季高级研讨班; 
