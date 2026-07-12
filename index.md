@@ -7,7 +7,10 @@ title: Curriculum Vitae
 
 **Email:** wangtao97@ustc.edu.cn
 
-**Profiles:** [InspireHEP](https://inspirehep.net/authors/3069636), ORCID: [0000-0001-5830-9826](https://orcid.org/0000-0001-5830-9826) 
+**Profiles:** 
+[![InspireHEP](https://img.shields.io/badge/InspireHEP-3069636-blue)](https://inspirehep.net/authors/3069636)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--5830--9826-green)](https://orcid.org/0000-0001-5830-9826)
+[![GitHub](https://img.shields.io/badge/GitHub-wangtao--phy-black)](https://github.com/wangtao-phy)
 
 ## Research Interest 
 * **Geometric Formulation of Stochastic Thermodynamics**
