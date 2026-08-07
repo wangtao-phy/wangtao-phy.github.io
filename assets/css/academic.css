@@ -58,7 +58,7 @@ a:hover {
 .animate-fade-in-up > *:nth-child(n+9) { animation-delay: 0.9s; }
 
 /* --- Relativistic Stochastic Thermodynamics Figure Grid --- */
-/* Layout: 2 side-by-side, 1 full width below */
+/* Layout: 2 side-by-side, 2 side-by-side below, 1 full width at the bottom */
 .research-figures-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -66,23 +66,19 @@ a:hover {
   margin: 2rem 0;
 }
 
-.research-figures-grid .fig-1 {
-  grid-column: 1 / 2;
-}
+.research-figures-grid .fig-1 { grid-column: 1 / 2; }
+.research-figures-grid .fig-2 { grid-column: 2 / 3; }
+.research-figures-grid .fig-3 { grid-column: 1 / 2; }
+.research-figures-grid .fig-4 { grid-column: 2 / 3; }
 
-.research-figures-grid .fig-2 {
-  grid-column: 2 / 3;
-}
-
-.research-figures-grid .fig-3 {
+.research-figures-grid .fig-5 {
   grid-column: 1 / -1; /* spans all columns */
   display: flex;
   justify-content: center;
 }
 
 .figure-placeholder {
-  background-color: #f8f9fa;
-  border: 1px dashed #ced4da;
+  background-color: transparent;
   border-radius: 8px;
   display: flex;
   align-items: center;

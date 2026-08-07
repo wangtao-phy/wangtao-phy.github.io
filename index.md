@@ -31,13 +31,19 @@ We have developed a comprehensive framework for relativistic stochastic thermody
 
 <div class="research-figures-grid">
   <div class="figure-placeholder fig-1">
-    [ Figure 1 Space Reserved ]
+    <img src="{{ '/assets/Min-tau-tx.png' | relative_url }}" alt="Min-tau-tx" />
   </div>
   <div class="figure-placeholder fig-2">
-    [ Figure 2 Space Reserved ]
+    <img src="{{ '/assets/Min-t-tx.png' | relative_url }}" alt="Min-t-tx" />
   </div>
   <div class="figure-placeholder fig-3">
-    [ Figure 3 Space Reserved ]
+    <img src="{{ '/assets/Min-t-tx-TR.png' | relative_url }}" alt="Min-t-tx-TR" />
+  </div>
+  <div class="figure-placeholder fig-4">
+    <img src="{{ '/assets/time-reversal.png' | relative_url }}" alt="time-reversal" />
+  </div>
+  <div class="figure-placeholder fig-5">
+    <img src="{{ '/assets/comp.png' | relative_url }}" alt="comp" />
   </div>
 </div>
 
