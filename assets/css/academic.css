@@ -214,10 +214,11 @@ a:hover {
 
 .research-row.double-images .figure-container {
   flex: 1;
+  max-width: 380px; /* Force them to be small boxes */
 }
 
 .research-row.single-image .figure-container {
-  max-width: 65%; /* Further reduces single image size */
+  max-width: 400px; /* Keep single images small */
   margin: 0 auto;
 }
 
