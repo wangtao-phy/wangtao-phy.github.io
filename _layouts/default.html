@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   
-  <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -31,6 +31,9 @@
 </head>
 
 <body>
+  <!-- Interactive Particles Background -->
+  <div id="tsparticles" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+
   <div class="app-container">
     <!-- Modern Glassmorphism Sidebar -->
     <aside class="sidebar">
@@ -75,6 +78,68 @@
           links[i].rel = 'noopener noreferrer';
         }
       }
+    });
+  </script>
+
+  <!-- tsParticles Configuration -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      fpsLimit: 60,
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse"
+          },
+          resize: true
+        },
+        modes: {
+          repulse: {
+            distance: 120,
+            duration: 0.4
+          }
+        }
+      },
+      particles: {
+        color: {
+          value: ["#7b61ff", "#f5a623", "#a899ff"] /* Purple and Amber */
+        },
+        links: {
+          color: "#a899ff",
+          distance: 150,
+          enable: true,
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: {
+            default: "bounce"
+          },
+          random: true,
+          speed: 1.2,
+          straight: false
+        },
+        number: {
+          density: {
+            enable: true,
+            area: 800
+          },
+          value: 50
+        },
+        opacity: {
+          value: 0.5
+        },
+        shape: {
+          type: "circle"
+        },
+        size: {
+          value: { min: 1, max: 4 }
+        }
+      },
+      detectRetina: true
     });
   </script>
 </body>
