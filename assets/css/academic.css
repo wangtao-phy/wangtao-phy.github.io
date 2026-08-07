@@ -9,8 +9,9 @@
   --text-secondary: #5c5866;
   --accent-color: #7b61ff; /* Elegant purple accent */
   --accent-hover: #5a42d1;
-  --sidebar-bg: rgba(255, 255, 255, 0.6);
-  --glass-border: rgba(255, 255, 255, 0.4);
+  --accent-complement: #f5a623; /* Golden Amber complementary */
+  --sidebar-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.5);
   --shadow-sm: 0 4px 15px rgba(123, 97, 255, 0.05);
   --shadow-md: 0 10px 30px rgba(123, 97, 255, 0.08);
 }
@@ -45,7 +46,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-hover);
+  color: var(--accent-complement);
 }
 
 /* --- Layout Structure --- */
@@ -139,8 +140,8 @@ a:hover {
 }
 
 .nav-item:hover {
-  background: rgba(123, 97, 255, 0.08);
-  color: var(--accent-color);
+  background: rgba(245, 166, 35, 0.08); /* Amber hover bg */
+  color: var(--accent-complement);
   transform: translateX(4px);
 }
 
@@ -148,6 +149,7 @@ a:hover {
   background: rgba(123, 97, 255, 0.1);
   color: var(--accent-color);
   font-weight: 600;
+  border-right: 4px solid var(--accent-complement); /* Complementary highlight */
 }
 
 .sidebar-footer {
@@ -267,14 +269,14 @@ a:hover {
 
 .project-highlight:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 10px 30px rgba(245, 166, 35, 0.15); /* Complementary shadow */
   background: linear-gradient(135deg, rgba(123, 97, 255, 0.12), rgba(123, 97, 255, 0.04));
-  border-color: rgba(123, 97, 255, 0.3);
+  border-color: var(--accent-complement); /* Amber border on hover */
 }
 
 .project-icon {
   font-size: 2rem;
-  color: var(--accent-color);
+  color: var(--accent-complement); /* Amber icon */
   margin-right: 1.2rem;
 }
 
@@ -311,8 +313,8 @@ a:hover {
   left: -20px;
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  color: var(--accent-color);
-  opacity: 0.5;
+  color: var(--accent-complement); /* Amber numbers */
+  opacity: 0.8;
 }
 
 .publications-list {
@@ -322,7 +324,7 @@ a:hover {
 
 .publications-list li:hover {
   transform: translateX(5px);
-  border-left-color: var(--accent-color);
+  border-left-color: var(--accent-complement); /* Amber border */
   box-shadow: var(--shadow-sm);
 }
 
