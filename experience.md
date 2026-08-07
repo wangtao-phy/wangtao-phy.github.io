@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CV
-permalink: /cv/
+title: Experience
+permalink: /experience/
 ---
 
 <div class="animate-fade-in-up" markdown="1">

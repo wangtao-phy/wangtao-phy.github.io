@@ -189,6 +189,7 @@ a:hover {
 .page-content p, .page-content li {
   margin-bottom: 1.2rem;
   font-size: 1.05rem;
+  text-align: justify;
 }
 
 .page-content ul, .page-content ol {
