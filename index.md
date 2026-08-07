@@ -29,22 +29,33 @@ title: Curriculum Vitae
 
 We have developed a comprehensive framework for relativistic stochastic thermodynamics, addressing fundamental questions concerning irreversibility, fluctuation theorems, and entropy production in curved spacetime.
 
-<div class="research-figures-grid">
-  <div class="figure-placeholder fig-1">
-    <img src="{{ '/assets/Min-tau-tx.png' | relative_url }}" alt="Min-tau-tx" />
+<div class="research-section">
+  <!-- First Row -->
+  <div class="research-row double-images">
+    <div class="figure-container">
+      <img src="{{ '/assets/Min-tau-tx.png' | relative_url }}" alt="Min-tau-tx" />
+    </div>
+    <div class="figure-container">
+      <img src="{{ '/assets/Min-t-tx.png' | relative_url }}" alt="Min-t-tx" />
+    </div>
   </div>
-  <div class="figure-placeholder fig-2">
-    <img src="{{ '/assets/Min-t-tx.png' | relative_url }}" alt="Min-t-tx" />
+  <div class="figure-caption">Particle Proper Time vs. Observer Proper Time as Evolution Parameter</div>
+
+  <!-- Second Row -->
+  <div class="research-row single-image">
+    <div class="figure-container">
+      <img src="{{ '/assets/time-reversal.png' | relative_url }}" alt="time-reversal" />
+    </div>
   </div>
-  <div class="figure-placeholder fig-3">
-    <img src="{{ '/assets/Min-t-tx-TR.png' | relative_url }}" alt="Min-t-tx-TR" />
+  <div class="figure-caption">Two Interpretations of Time Reversal</div>
+
+  <!-- Third Row -->
+  <div class="research-row single-image">
+    <div class="figure-container">
+      <img src="{{ '/assets/Min-t-tx-TR.png' | relative_url }}" alt="Min-t-tx-TR" />
+    </div>
   </div>
-  <div class="figure-placeholder fig-4">
-    <img src="{{ '/assets/time-reversal.png' | relative_url }}" alt="time-reversal" />
-  </div>
-  <div class="figure-placeholder fig-5">
-    <img src="{{ '/assets/comp-hq.png' | relative_url }}" alt="comp" />
-  </div>
+  <div class="figure-caption">Forward and Backward Evolution of Relativistic Stochastic Particles</div>
 </div>
 
 ## Research Statement 
