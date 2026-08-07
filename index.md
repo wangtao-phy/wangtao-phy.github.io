@@ -43,7 +43,7 @@ We have developed a comprehensive framework for relativistic stochastic thermody
     <img src="{{ '/assets/time-reversal.png' | relative_url }}" alt="time-reversal" />
   </div>
   <div class="figure-placeholder fig-5">
-    <img src="{{ '/assets/comp.png' | relative_url }}" alt="comp" />
+    <img src="{{ '/assets/comp-hq.png' | relative_url }}" alt="comp" />
   </div>
 </div>
 
