@@ -19,7 +19,7 @@ title: Curriculum Vitae
     <div class="project-icon"><i class="fab fa-apple"></i></div>
     <div class="project-content">
       <div class="project-title">Featured Project: SimPleview</div>
-      <div class="project-desc">Built a native macOS PDF reader integrated with AI capabilities.</div>
+      <div class="project-desc">A native macOS PDF reader completely coded by AI based on my requirements.</div>
     </div>
   </div>
 </a>
