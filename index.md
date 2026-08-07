@@ -14,15 +14,13 @@ title: Curriculum Vitae
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--5830--9826-green)](https://orcid.org/0000-0001-5830-9826)
 [![GitHub](https://img.shields.io/badge/GitHub-wangtao--phy-black)](https://github.com/wangtao-phy)
 
-<a href="https://github.com/wangtao-phy/SimPleview" target="_blank" style="text-decoration: none;">
   <div class="project-highlight">
     <div class="project-icon"><i class="fab fa-apple"></i></div>
     <div class="project-content">
-      <div class="project-title">Featured Project: SimPleview</div>
+      <div class="project-title">Featured Project: <a href="https://github.com/wangtao-phy/SimPleview" target="_blank" style="text-decoration: underline; font-weight: 700;">SimPleview</a></div>
       <div class="project-desc">A native macOS PDF reader completely coded by AI based on my requirements.</div>
     </div>
   </div>
-</a>
 
 ## Research Interest 
 * **Geometric Formulation of Stochastic Thermodynamics**
