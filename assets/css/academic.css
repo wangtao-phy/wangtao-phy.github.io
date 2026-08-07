@@ -197,21 +197,30 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* --- Relativistic Stochastic Thermodynamics Figure Grid --- */
-.research-figures-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+/* --- Relativistic Stochastic Thermodynamics Figure Layout --- */
+.research-section {
   margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.research-figures-grid .fig-1 { grid-column: 1 / 2; }
-.research-figures-grid .fig-2 { grid-column: 2 / 3; }
-.research-figures-grid .fig-3 { grid-column: 1 / 2; }
-.research-figures-grid .fig-4 { grid-column: 2 / 3; }
-.research-figures-grid .fig-5 { grid-column: 1 / -1; display: flex; justify-content: center; }
+.research-row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
 
-.figure-placeholder {
+.research-row.double-images .figure-container {
+  flex: 1;
+}
+
+.research-row.single-image .figure-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.figure-container {
   background: white;
   border-radius: 16px;
   padding: 10px;
@@ -220,20 +229,64 @@ a:hover {
   border: 1px solid rgba(255,255,255,0.8);
 }
 
-.figure-placeholder:hover {
+.figure-container:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
   border-color: rgba(123, 97, 255, 0.2);
 }
 
-.figure-placeholder img {
+.figure-container img {
   width: 100%;
   border-radius: 10px;
   display: block;
 }
 
-.research-figures-grid .fig-5 img {
-  max-width: 80%; /* Don't make the last one too huge */
+.figure-caption {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+/* --- Featured Project Highlight --- */
+.project-highlight {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(123, 97, 255, 0.08), rgba(123, 97, 255, 0.02));
+  border: 1px solid rgba(123, 97, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0 2.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.project-highlight:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+  background: linear-gradient(135deg, rgba(123, 97, 255, 0.12), rgba(123, 97, 255, 0.04));
+  border-color: rgba(123, 97, 255, 0.3);
+}
+
+.project-icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-right: 1.2rem;
+}
+
+.project-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
 }
 
 /* --- Publications Styling --- */
@@ -299,19 +352,11 @@ a:hover {
     padding: 2rem 1.5rem;
   }
   
-  .research-figures-grid {
-    grid-template-columns: 1fr;
+  .research-row {
+    flex-direction: column;
   }
   
-  .research-figures-grid .fig-1,
-  .research-figures-grid .fig-2,
-  .research-figures-grid .fig-3,
-  .research-figures-grid .fig-4,
-  .research-figures-grid .fig-5 {
-    grid-column: 1 / -1;
-  }
-  
-  .research-figures-grid .fig-5 img {
+  .research-row.single-image .figure-container {
     max-width: 100%;
   }
 }
