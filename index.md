@@ -66,6 +66,14 @@ We have developed a comprehensive framework for relativistic stochastic thermody
     </div>
   </div>
   <div class="figure-caption">Forward and Backward Evolution of Relativistic Stochastic Particles</div>
+
+  <!-- Fourth Row -->
+  <div class="research-row single-image">
+    <div class="figure-container">
+      <img src="{{ '/assets/comp-hq.png' | relative_url }}" alt="comp" />
+    </div>
+  </div>
+  <div class="figure-caption">Diffusion Predicted by Relativistic Adiabatic Elimination</div>
 </div>
 
 ## Research Statement 

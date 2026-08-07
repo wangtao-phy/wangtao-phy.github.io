@@ -199,10 +199,11 @@ a:hover {
 
 /* --- Relativistic Stochastic Thermodynamics Figure Layout --- */
 .research-section {
-  margin: 3rem 0;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  max-width: 850px; /* Constrains the max size of all images */
 }
 
 .research-row {
@@ -216,7 +217,7 @@ a:hover {
 }
 
 .research-row.single-image .figure-container {
-  max-width: 80%;
+  max-width: 65%; /* Further reduces single image size */
   margin: 0 auto;
 }
 
