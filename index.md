@@ -3,6 +3,8 @@ layout: page
 title: Curriculum Vitae
 ---
 
+<div class="animate-fade-in-up" markdown="1">
+
 # Tao Wang (王涛)
 
 **Email:** wangtao97@ustc.edu.cn
@@ -23,11 +25,28 @@ title: Curriculum Vitae
 
   Studying black hole thermodynamics by developing an appropriate statistical description of matter fields in curved spacetime, and analysing the behaviour of particles in curved spacetime. 
 
+## Featured Research: Relativistic Stochastic Thermodynamics
+
+We have developed a comprehensive framework for relativistic stochastic thermodynamics, addressing fundamental questions concerning irreversibility, fluctuation theorems, and entropy production in curved spacetime.
+
+<div class="research-figures-grid">
+  <div class="figure-placeholder fig-1">
+    [ Figure 1 Space Reserved ]
+  </div>
+  <div class="figure-placeholder fig-2">
+    [ Figure 2 Space Reserved ]
+  </div>
+  <div class="figure-placeholder fig-3">
+    [ Figure 3 Space Reserved ]
+  </div>
+</div>
 
 ## Research Statement 
 * Developed the restricted phase space formalism for black hole thermodynamics, elucidating how allowing the gravitational constant $G$ to vary leads to an extensive formulation of black hole thermodynamics;
 * Constructed a foundational framework for stochastic mechanics in curved spacetime.  This framework enables consistent formulations of the first and second laws of thermodynamics under causal constraints and establishes a fluctuation theorem that preserves general covariance; 
 * Analyzed relativistic diffusion processes using adiabatic elimination methods, clarifying their conceptual and dynamical distinctions from diffusion mechanisms in the Newtonian regime.
+
+</div>
 
 <script>
   MathJax = {

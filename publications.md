@@ -4,6 +4,8 @@ title: Publications
 permalink: /publications/
 ---
 
+<div class="animate-fade-in-up publications-list" markdown="1">
+
 1. **WANG T**, ZHAO L. "Black hole thermodynamics is extensive with variable Newton constant," [*Phys. Lett. B*, 827:136935, 2022](https://doi.org/10.1016/j.physletb.2022.136935). [[arXiv:2112.11236](https://arxiv.org/abs/2112.11236)]
 2. KONG X, **WANG T**, GAO Z, ZHAO L. "Restricted phased space thermodynamics for black holes in higher dimensions and higher curvature gravities," [*Entropy*, 24(8):1131, 2022](https://doi.org/10.3390/e24081131). [[arXiv:2208.07748](https://arxiv.org/abs/2208.07748)]
 3. KONG X, **WANG T**, ZHAO L. "High temperature AdS black holes are low temperature quantum phonon gases," [*Phys. Lett. B*, 836:137623, 2023](https://doi.org/10.1016/j.physletb.2022.137623). [[arXiv:2209.12230](https://arxiv.org/abs/2209.12230)]
@@ -17,3 +19,5 @@ permalink: /publications/
 11. CAI Y, **WANG T**, ZHAO L. "Fluctuation theorems in general relativistic stochastic thermodynamics," [*Phys. Rev. E*, 111, 024102, 2025](https://doi.org/10.1103/PhysRevE.111.024102). [[arXiv:2407.09914](https://arxiv.org/abs/2407.09914)]
 12. **WANG T**, SHI Y. "Adiabatic Elimination in Relativistic Stochastic Mechanics," [*Physica A*, 2026, 131404](https://doi.org/10.1016/j.physa.2026.131404). [[arXiv:2510.13053](https://arxiv.org/abs/2510.13053)]
 13. **王涛**, 施郁, "“热理论第二定律”的力学对应," *科学*, 2026.03.
+
+</div>
