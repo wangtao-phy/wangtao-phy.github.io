@@ -19,7 +19,7 @@ permalink: /experience/
   * Investigated relativistic stochastic mechanics and derived effective coarse-grained models. 
   * Working on developing a framework describing the transition from relativistic stochastic mechanics to quantum behavior. 
   * Research on the historical development of thermodynamics, statistical mechanics, and early quantum theory. 
-* **Postdoctoral Researcher, University of Science and Technology of China** (2024.07-2026.06) 
+* **Postdoctoral Researcher, Westlake University** (2026.08-) 
   * Collaborating Advisor: Prof. Hong Qian(钱紘) 
   * Exploring the geometric formulation of non‑equilibrium thermodynamics.
   * Research on the derivation of physical theories from probabilistic principles.
