@@ -7,7 +7,7 @@ title: Curriculum Vitae
 
 # Tao Wang (王涛)
 
-**Email:** wangtao97@ustc.edu.cn
+**Email:** taowang@mail.nankai.edu.cn, wangtao97@ustc.edu.cn, wangtao02@westlake.edu.cn
 
 **Profiles:** 
 [![InspireHEP](https://img.shields.io/badge/InspireHEP-3069636-blue)](https://inspirehep.net/authors/3069636)
