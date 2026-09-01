@@ -151,6 +151,20 @@ a:hover {
   border-right: 4px solid var(--accent-complement);
 }
 
+.sidebar-friends {
+  margin-top: 2.5rem;
+}
+
+.nav-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  opacity: 0.7;
+}
+
 .sidebar-footer {
   margin-top: auto;
   font-family: 'Outfit', sans-serif;
